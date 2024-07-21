@@ -10,4 +10,15 @@
     <dimen name="w_ic">40dp</dimen>
     <dimen name="c_r_quick_actions">20dp</dimen>
     <dimen name="c_r_16">16dp</dimen>
+    <dimen name="_20dp">20dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="p_v_5dp">5dp</dimen>
+    <dimen name="m_t_quick_action">10dp</dimen>
+    <dimen name="m_b_quick_actions">10dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="v_s_grid">10dp</dimen>
+    <dimen name="h_s_grid">35dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
 </resources>

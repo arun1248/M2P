@@ -85,7 +85,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingVertical="5dp"
+            android:paddingVertical="@dimen/p_v_5dp"
             >
 
             <ImageView
@@ -95,7 +95,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/transferIc"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/m_t_quick_action"
                 app:layout_constraintWidth_percent=".2"
                 android:id="@+id/walletIc"
                 />
@@ -109,7 +109,7 @@
                 app:layout_constraintEnd_toEndOf="@id/walletIc"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:gravity="center"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/m_b_quick_actions"
                 android:layout_marginTop="5dp"
                 />
 
@@ -120,7 +120,7 @@
                 app:layout_constraintStart_toEndOf="@id/walletIc"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/reqIc"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/m_t_quick_action"
                 app:layout_constraintWidth_percent=".2"
                 android:id="@+id/transferIc"
                 />
@@ -134,7 +134,7 @@
                 app:layout_constraintEnd_toEndOf="@id/transferIc"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:gravity="center"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/m_b_quick_actions"
                 android:layout_marginTop="5dp"
                 />
 
@@ -145,7 +145,7 @@
                 app:layout_constraintStart_toEndOf="@id/transferIc"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/historyIc"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/m_t_quick_action"
                 app:layout_constraintWidth_percent=".2"
                 android:id="@+id/reqIc"
                 />
@@ -159,7 +159,7 @@
                 app:layout_constraintEnd_toEndOf="@id/reqIc"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:gravity="center"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/m_b_quick_actions"
                 android:layout_marginTop="5dp"
                 />
 
@@ -170,7 +170,7 @@
                 app:layout_constraintStart_toEndOf="@id/reqIc"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/m_t_quick_action"
                 app:layout_constraintWidth_percent=".2"
                 android:id="@+id/historyIc"
                 />
@@ -184,7 +184,7 @@
                 app:layout_constraintEnd_toEndOf="@id/historyIc"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:gravity="center"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="@dimen/m_b_quick_actions"
                 android:layout_marginTop="5dp"
                 />
 
@@ -197,7 +197,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="@id/quickActionsCard"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/_30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -214,7 +214,7 @@
         app:layout_constraintTop_toBottomOf="@id/quickActionsCard"
         app:layout_constraintStart_toStartOf="@id/quickActionsCard"
         app:layout_constraintEnd_toEndOf="@id/quickActionsCard"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16dp"
         android:id="@+id/paymentLstTitle"
         style="@style/TitleText.MidLarge.Black"
         android:gravity="start"
@@ -229,9 +229,9 @@
         android:numColumns="4"
         android:id="@+id/paymentGrid"
         tools:listitem="@layout/payment_item"
-        android:verticalSpacing="10dp"
-        android:horizontalSpacing="35dp"
-        android:layout_marginTop="10dp"
+        android:verticalSpacing="@dimen/v_s_grid"
+        android:horizontalSpacing="@dimen/h_s_grid"
+        android:layout_marginTop="@dimen/_10dp"
         />
 
     <TextView
@@ -241,7 +241,7 @@
         app:layout_constraintTop_toBottomOf="@id/paymentGrid"
         app:layout_constraintStart_toStartOf="@id/quickActionsCard"
         app:layout_constraintEnd_toEndOf="@id/quickActionsCard"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16dp"
         android:id="@+id/promoTitle"
         style="@style/TitleText.MidLarge.Black"
         app:layout_constraintHorizontal_bias="0"
@@ -254,7 +254,7 @@
         app:layout_constraintTop_toBottomOf="@id/paymentGrid"
         app:layout_constraintStart_toStartOf="@id/quickActionsCard"
         app:layout_constraintEnd_toEndOf="@id/quickActionsCard"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/_16dp"
         android:id="@+id/seeMoreTitle"
         style="@style/TitleText.MidLarge.Black"
         android:textColor="@color/see_more"
@@ -265,7 +265,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/seeMoreTitle"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/_10dp"
         app:layout_constraintDimensionRatio="16:9"
         android:id="@+id/bannerPager" />
 

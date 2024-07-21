@@ -50,9 +50,9 @@
         android:id="@+id/cardBg"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="@dimen/_30dp"
         app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="20dp"
+        app:cardCornerRadius="@dimen/c_r_quick_actions"
         app:cardElevation="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,8 +87,8 @@
                     style="@style/TitleText.MidLarge.Black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginTop="@dimen/_15dp"
                     tools:text="Benedict Cumberbatch" />
 
                 <TextView
@@ -97,8 +97,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="@dimen/_12dp"
+                    android:layout_marginStart="@dimen/_10dp"
                     tools:text="Benedict Cumberbatch" />
 
             </LinearLayout>
@@ -116,7 +116,7 @@
                 style="@style/TitleText.Fade.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="@dimen/_10dp"
                 android:text="@string/transfer_amount"
                 android:layout_marginTop="26dp"
                 app:layout_constraintBottom_toTopOf="@id/userCard"
@@ -129,7 +129,7 @@
                 style="@style/TitleText.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="@dimen/_10dp"
                 app:layout_constraintBottom_toBottomOf="@id/amtTitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="$1500" />
@@ -139,7 +139,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="20dp"
+                app:cardCornerRadius="@dimen/c_r_quick_actions"
                 app:layout_constraintBottom_toTopOf="@id/dateTitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -153,8 +153,8 @@
 
                     <ImageView
                         android:id="@+id/profileImg"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="@dimen/w_ic"
+                        android:layout_height="@dimen/w_ic"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -165,7 +165,7 @@
                         style="@style/TitleText.Black"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="@dimen/_10dp"
                         app:layout_constraintStart_toEndOf="@id/profileImg"
                         app:layout_constraintTop_toTopOf="@id/profileImg"
                         tools:text="Benedict Cumberbatch" />
@@ -189,7 +189,7 @@
                 style="@style/TitleText.Fade.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="@dimen/_10dp"
                 android:text="@string/date_time"
                 app:layout_constraintBottom_toTopOf="@id/refTitle"
                 app:layout_constraintStart_toStartOf="parent"
@@ -210,7 +210,7 @@
                 style="@style/TitleText.Fade.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="@dimen/_10dp"
                 android:text="@string/no_ref"
                 app:layout_constraintBottom_toTopOf="@id/seeMore"
                 app:layout_constraintStart_toStartOf="parent"
@@ -221,7 +221,7 @@
                 style="@style/TitleText.Black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="@dimen/_10dp"
                 app:layout_constraintBottom_toBottomOf="@id/refTitle"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:text="$1500" />
