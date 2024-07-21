@@ -1,0 +1,64 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.M2P" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.M2P.BottomNavigationView" parent="Base.Theme.M2P">
+        <item name="colorPrimary">@color/bg_clr</item>
+    </style>
+
+    <style name="Theme.M2P" parent="Base.Theme.M2P" />
+
+    <style name="SpecificCornerRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="TitleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/medium_txt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TitleText.Fade">
+        <item name="android:textColor">@color/fade_clr</item>
+    </style>
+
+    <style name="TitleText.Fade.Black">
+        <item name="android:textColor">@color/black_fade_clr</item>
+    </style>
+
+    <style name="TitleText.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TitleText.MidLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="paddingStart">0dp</item>
+        <item name="paddingEnd">0dp</item>
+    </style>
+
+    <style name="TitleText.MidLarge.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TitleText.MidLarge.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TitleText.Large">
+        <item name="android:textSize">@dimen/large_txt</item>
+    </style>
+
+    <style name="TitleText.Large.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>

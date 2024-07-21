@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="t_p_h">16dp</dimen>
+    <dimen name="m_t_balance_title_txt">16dp</dimen>
+    <dimen name="medium_txt">14sp</dimen>
+    <dimen name="btn_txt">18sp</dimen>
+    <dimen name="large_txt">28sp</dimen>
+    <dimen name="w_profile">60dp</dimen>
+    <dimen name="p_h_text">16dp</dimen>
+    <dimen name="w_ic">40dp</dimen>
+    <dimen name="c_r_quick_actions">20dp</dimen>
+    <dimen name="c_r_16">16dp</dimen>
+</resources>

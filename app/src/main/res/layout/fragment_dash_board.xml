@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_clr"
+    tools:context=".ui.DashBoardFragment">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/profileImg"
+        android:layout_width="@dimen/w_profile"
+        android:layout_height="@dimen/w_profile"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@id/notificationBtn"
+        app:layout_constraintHorizontal_bias=".1"
+        app:layout_constraintVertical_bias=".09"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/greetingsTxt"
+        style="@style/TitleText"
+        android:paddingHorizontal="@dimen/p_h_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/notificationBtn"
+        app:layout_constraintEnd_toStartOf="@id/notificationBtn"
+        app:layout_constraintStart_toEndOf="@id/profileImg"
+        app:layout_constraintTop_toTopOf="@id/profileImg"
+        tools:text="Hello, lhor" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/notificationBtn"
+        android:layout_width="@dimen/w_ic"
+        android:layout_height="@dimen/w_ic"
+        android:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_bell"
+        android:tint="@color/white"
+        app:layout_constraintHorizontal_bias=".9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profileImg" />
+
+    <TextView
+        android:id="@+id/balanceTitleTxt"
+        style="@style/TitleText.Fade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/greetingsTxt"
+        app:layout_constraintStart_toStartOf="@id/greetingsTxt"
+        android:layout_marginTop="@dimen/m_t_balance_title_txt"
+        app:layout_constraintTop_toBottomOf="@id/greetingsTxt"
+        android:text="@string/available_balance" />
+
+    <TextView
+        android:id="@+id/balanceTxt"
+        style="@style/TitleText.Large"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/notificationBtn"
+        app:layout_constraintStart_toStartOf="@id/profileImg"
+        android:layout_marginTop="@dimen/m_t_balance_title_txt"
+        app:layout_constraintTop_toBottomOf="@id/balanceTitleTxt"
+        android:paddingHorizontal="@dimen/p_h_text"
+        android:ellipsize="end"
+        tools:text="$11,547.54" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/balanceTxt"
+        app:layout_constraintWidth_percent=".92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".07"
+        app:cardCornerRadius="@dimen/c_r_quick_actions"
+        app:cardElevation="@dimen/c_r_16"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/quickActionsCard"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5dp"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wallet"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/transferIc"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent=".2"
+                android:id="@+id/walletIc"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/walletIc"
+                android:text="@string/top_up"
+                app:layout_constraintStart_toStartOf="@id/walletIc"
+                app:layout_constraintEnd_toEndOf="@id/walletIc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_transfer"
+                app:layout_constraintStart_toEndOf="@id/walletIc"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/reqIc"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent=".2"
+                android:id="@+id/transferIc"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/transferIc"
+                android:text="@string/transfer"
+                app:layout_constraintStart_toStartOf="@id/transferIc"
+                app:layout_constraintEnd_toEndOf="@id/transferIc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_money"
+                app:layout_constraintStart_toEndOf="@id/transferIc"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/historyIc"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent=".2"
+                android:id="@+id/reqIc"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/reqIc"
+                android:text="@string/request"
+                app:layout_constraintStart_toStartOf="@id/reqIc"
+                app:layout_constraintEnd_toEndOf="@id/reqIc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_history"
+                app:layout_constraintStart_toEndOf="@id/reqIc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="10dp"
+                app:layout_constraintWidth_percent=".2"
+                android:id="@+id/historyIc"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/historyIc"
+                android:text="@string/history"
+                app:layout_constraintStart_toStartOf="@id/historyIc"
+                app:layout_constraintEnd_toEndOf="@id/historyIc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/quickActionsCard"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardBackgroundColor="@color/white"
+        app:shapeAppearanceOverlay="@style/SpecificCornerRounded"
+        >
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_list"
+        app:layout_constraintTop_toBottomOf="@id/quickActionsCard"
+        app:layout_constraintStart_toStartOf="@id/quickActionsCard"
+        app:layout_constraintEnd_toEndOf="@id/quickActionsCard"
+        android:layout_marginTop="16dp"
+        android:id="@+id/paymentLstTitle"
+        style="@style/TitleText.MidLarge.Black"
+        android:gravity="start"
+        />
+
+    <GridView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/quickActionsCard"
+        app:layout_constraintEnd_toEndOf="@id/quickActionsCard"
+        app:layout_constraintTop_toBottomOf="@id/paymentLstTitle"
+        android:numColumns="4"
+        android:id="@+id/paymentGrid"
+        tools:listitem="@layout/payment_item"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="35dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/promo_discount"
+        app:layout_constraintTop_toBottomOf="@id/paymentGrid"
+        app:layout_constraintStart_toStartOf="@id/quickActionsCard"
+        app:layout_constraintEnd_toEndOf="@id/quickActionsCard"
+        android:layout_marginTop="16dp"
+        android:id="@+id/promoTitle"
+        style="@style/TitleText.MidLarge.Black"
+        app:layout_constraintHorizontal_bias="0"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_more"
+        app:layout_constraintTop_toBottomOf="@id/paymentGrid"
+        app:layout_constraintStart_toStartOf="@id/quickActionsCard"
+        app:layout_constraintEnd_toEndOf="@id/quickActionsCard"
+        android:layout_marginTop="16dp"
+        android:id="@+id/seeMoreTitle"
+        style="@style/TitleText.MidLarge.Black"
+        android:textColor="@color/see_more"
+        app:layout_constraintHorizontal_bias="1"
+        />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/seeMoreTitle"
+        android:layout_marginTop="10dp"
+        app:layout_constraintDimensionRatio="16:9"
+        android:id="@+id/bannerPager" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
